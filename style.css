@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    background-color: #14a39e;
+}
+
+/* Start Navigation */
+nav{
+    width: 100%;
+    height: 60px;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%; 
+    height: 100%;
+    list-style-type: none;
+}
+nav ul li{
+    color: white;
+    border-radius: 10%;
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+nav li:hover{
+    background-color: lightgray;
+    transition: 0.5s;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+/* End Navigation */ 
+
+/* Start Home */
+#home{
+    margin-top: 80px;
+    height: 30vh;
+    text-align: center;
+    line-height: 4rem;
+}
+#home h1{
+    font-size: 3rem;
+}   
+#home a{
+    text-decoration: none;
+    color: white;
+    background-color: rgba(211, 211, 211, 0.668);   
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+#home a:hover{
+    box-shadow: 5px 5px 10px rgb(55, 55, 55);
+}
+/* End home */
+
+/* Start Profile  */
+#profile{
+    width: 100%;
+    height: 330px;
+    text-align: center;
+    line-height: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#profile .about{
+    width: 70%;
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#profile h2{
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+#profile .about .aboutimg{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    /* overflow: hidden; */
+    border: 5px solid lightgray;
+}
+#profile .about .aboutcontent{
+    width: 500px;
+    height: 150px;
+}
+#profile .about .aboutimg img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+/* End Profile */
+
+/* Start skills */
+#skill{
+    width: 100%;
+    height: 800px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#skill h2{
+    font-size: 1.7rem;
+    margin-bottom: 50px;
+}
+#skill .container{
+    width: 60%;
+    height: 300px;
+    margin: 10px 0;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#skill .container div{
+    width: 400px;
+    height: 300px;
+    background: #555555;
+}
+
+#skill .container div h3{
+    text-align: center;
+    line-height: 4rem;
+    font-size: 2rem;
+    margin-top: 20px;
+}
+#skill .container div ul{
+    padding-left: 20px;
+}
+#skill .container div ul li{
+    font-size: 1rem;
+    line-height: 2rem;
+}
+/* End skills */
+
+/* Start contacts */
+#contact{
+    width: 100%;
+    height: 300px;
+    /* background: skyblue; */
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#contact .contacttext{
+    width: 600px;
+    height: 250px;
+
+    line-height: 2rem;
+    /* background: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact .contacttext table tr td:hover{
+    color: black;
+    cursor: pointer;
+}
+#contact .contactmap{
+    width: 400px;
+    height: 250px;
+    /* background: blue; */
+}
+#contact .contactmap iframe{
+    width: 100%;
+    height: 100%;
+}
+/* End contacts */
+
+/* Start Footer */
+footer{
+    width: 100%;
+    height: 30px;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width:768px){
+    #profile{
+        height: 500px;
+        /* align-items: center; */
+    }
+    #profile .about{
+        flex-direction: column;
+    }
+    #profile .about .aboutcontent p{
+        font-size: 0.9rem;
+    }
+    #skill{
+        height: 1400px;
+        margin-bottom: 0;
+    }
+    #skill .container{
+        height: 600px;
+        flex-direction: column;
+    }
+    #skill .container div{
+        height: 300px;
+        margin: 10px 0;
+    }
+    #contact{
+        flex-direction: column;
+        height: 600px;
+    }
+}
