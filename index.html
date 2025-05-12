@@ -3,24 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfilio</title>
+    <title>Paiforlio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <!-- Nav bar -->
     <nav>
+      <header>
+        <a href="./index.html">
+          <span class="pai">Pai</span><span class="forlio">forlio</span>
+        </a>
+      </header>
       <ul class="nav-list">
         <li><a href="#home">Home</a></li>
         <li><a href="#profile">Profile</a></li>
-        <li>Skills</li>
-        <li>Contact</li>
+        <li><a href="#skill">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
     <!-- Home section -->
     <section id="home">
-      <h1>Welcome to My Portfolio</h1>
-      <p>This is a brief introduction about myself.</p>
+      <h2>Hey, I'm</h2>
+      <i class="fa-regular fa-hand"></i>
+      <h1>Paing Thu Aung</h1>
       <a href="#">Learn More About Me</a>
     </section>
 
@@ -29,95 +47,106 @@
       <h2>About me</h2>
       <div class="about">
         <div class="aboutimg">
-          <img src="img/profile.jpg" alt="profile" />
+          <img src="img/photo.jpg" alt="profile" />
         </div>
         <div class="aboutcontent">
-          <p>Hi, I'm Ken, a passionate web developer with experience in front-end
-            and back-end technologies. I love creating intuitive, responsive
-            websites and applications. Let's collaborate and create something
-            amazing!</p>
+          <p>
+            Hi, I'm Paing Thu Aung, a passionate front-end developer with
+            expertise in creating responsive, user-friendly, and visually
+            appealing websites. I specialize in HTML, CSS, JavaScript, and
+            modern frameworks like Bootstrap. My goal is to craft seamless user
+            experiences and bring creative designs to life.
+          </p>
         </div>
       </div>
     </section>
 
+    <!-- skill section -->
     <section id="skill">
       <h2>Skills</h2>
       <div class="container">
         <div>
           <h3>HTML</h3>
           <ul>
-            <li>Semantic structure, forms, tables, and basic SEO.</li>
-            <li>Built several static pages using clean, accessible HTML.</li>
-            <li>Comfortable using tags like section, article, and form.</li>
+            <li>Semantic HTML</li>
+            <li>Forms and Validation</li>
+            <li>SEO Best Practices</li>
+            <li>Accessibility</li>
           </ul>
         </div>
         <div>
-          <h3>HTML</h3>
+          <h3>CSS</h3>
           <ul>
-            <li>Semantic structure, forms, tables, and basic SEO.</li>
-            <li>Built several static pages using clean, accessible HTML.</li>
-            <li>Comfortable using tags like section, article, and form.</li>
-          </ul>
-        </div>
-      </div>
-      <div class="container">
-        <div>
-          <h3>HTML</h3>
-          <ul>
-            <li>Semantic structure, forms, tables, and basic SEO.</li>
-            <li>Built several static pages using clean, accessible HTML.</li>
-            <li>Comfortable using tags like section, article, and form.</li>
+            <li>Responsive Design</li>
+            <li>Flexbox</li>
+            <li>Animations</li>
+            <li>Transitions</li>
           </ul>
         </div>
         <div>
-          <h3>HTML</h3>
+          <h3>JavaScript</h3>
           <ul>
-            <li>Semantic structure, forms, tables, and basic SEO.</li>
-            <li>Built several static pages using clean, accessible HTML.</li>
-            <li>Comfortable using tags like section, article, and form.</li>
+            <li>ES6+ Features</li>
+            <li>DOM Manipulation</li>
+            <li>APIs and Fetch</li>
+            <li>Frameworks (React/Angular)</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Bootstrap</h3>
+          <ul>
+            <li>Grid System</li>
+            <li>Components</li>
+            <li>Utilities</li>
+            <li>Custom Themes</li>
           </ul>
         </div>
       </div>
     </section>
 
     <!-- contact section -->
-     <section id="contact">
-      <div class="contacttext">
-        <table>
-          <tr>
-            <td width="30px"><i class="fa-solid fa-phone"></i></td>
-            <td>Phone</td>
-            <td>09798455825</td>
-          </tr>
-          <tr>
-            <td><i class="fa-solid fa-envelope"></i></td>
-            <td>Email</td>
-            <td>paing.pta@gmail.com</td>
-          </tr>
-          <tr>
-            <td><i class="fa-brands fa-facebook"></i></td>
-            <td>Facebook</td>
-            <td>Paing Thu Aung</td>
-          </tr>
-          <tr>
-            <td><i class="fa-brands fa-x-twitter"></i></td>
-            <td>X</td>
-            <td>Pai</td>
-          </tr>
-          <tr>
-            <td><i class="fa-solid fa-location-dot"></i></td>
-            <td>Address</td>
-            <td>No.957,Zayar Thiri 18str(B),South Oakalar</td>
-          </tr>
-        </table>
+    <section id="contact">
+      <div class="contact">
+        <span>Con</span><span class="tactme">tact me</span>
+        <p>Feel free to reach out.<br>Whether you want to hire me or have an idea to share with.</p>
+        <div class="contacts">
+          <div>Location</div>
+          <a href="">South Okkalapa</a>
+        </div>
+        <div class="contacts">
+          <div>Email</div>
+          <a href="">paing.pta@gmail.com</a>
+        </div>
+        <div class="contacts">
+          <div>Phone</div>
+          <a href="">+959 986484084</a>
+        </div>
       </div>
-      <div class="contactmap">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3818.589968765998!2d96.1676101746157!3d16.846685518157564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c193043ffc8631%3A0x35468ce2a27498be!2sBooboo%20Cafe!5e0!3m2!1sen!2smm!4v1746460113727!5m2!1sen!2smm" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="form">
+        <form action="submit" method="post">
+          <div class="name-email">
+            <div class="name">
+              <label for="name">Name</label>
+              <input autocomplete="additional-name" required type="text" id="name" />
+            </div>
+            <div class="email">
+              <label for="email">Email</label>
+              <input type="email" id="email" />
+            </div>
+            <div class="phone">
+              <label  for="phone">Phone Number</label>
+              <input autocomplete="additional-name" type="phone" id="phone" />
+            </div>
+            <div class="message">
+            <label for="message">Message</label>
+            <textarea required id="message" rows="5"></textarea>
+            <button class="submit">Submit</button>
       </div>
-     </section>
-
-     <footer>
+    </section>
+    <footer>
       <p>&copy; 2025 Pai. All Right Reserve.</p>
-     </footer>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
