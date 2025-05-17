@@ -12,6 +12,18 @@ window.addEventListener("scroll", () => {
     lastScrollY = window.scrollY;
 });
 
+window.addEventListener("scroll", () => {
+    const nav = document.querySelector("ul");
+    if (window.scrollY > lastScrollY) {
+        // Scrolling down
+        nav.classList.add("nav-list-hidden");
+    } else {
+        // Scrolling up
+        nav.classList.remove("nav-list-hidden");
+    }
+    lastScrollY = window.scrollY;
+});
+
 function toggleModal() {
     const modal = document.getElementById("nav-modal");
     const navList = document.querySelector(".nav-list");
@@ -24,3 +36,8 @@ function toggleModal() {
         navList.style.display = "flex";
     }
 }
+
+document.getElementById('menu-icon').addEventListener('click', function() {
+    const navList = document.getElementById('nav-list');
+    navList.style.display = navList.style.display === 'flex' ? 'none' : 'flex';
+});

@@ -25,7 +25,8 @@
           <span class="pai">Pai</span><span class="forlio">forlio</span>
         </a>
       </header>
-      <ul class="nav-list">
+      <img id="menu-icon" src="img/menu-icon.svg" alt="Menu" />
+      <ul class="nav-list" id="nav-list">
         <li><a href="#home">Home</a></li>
         <li><a href="#profile">Profile</a></li>
         <li><a href="#skill">Skills</a></li>
@@ -123,28 +124,31 @@
         </div>
       </div>
       <div class="form">
-        <form action="submit" method="post">
+        <form action="#" method="post"> <!-- try a submit backend later -->
           <div class="name-email">
             <div class="name">
               <label for="name">Name</label>
-              <input autocomplete="additional-name" required type="text" id="name" />
+              <input autocomplete="name" required type="text" id="name" />
             </div>
             <div class="email">
               <label for="email">Email</label>
-              <input type="email" id="email" />
+              <input autocomplete="email" required type="email" id="email" />
             </div>
             <div class="phone">
               <label  for="phone">Phone Number</label>
-              <input autocomplete="additional-name" type="phone" id="phone" />
+              <input autocomplete="tel" type="tel" id="phone"/>
             </div>
             <div class="message">
-            <label for="message">Message</label>
-            <textarea required id="message" rows="5"></textarea>
-            <button class="submit">Submit</button>
+              <label for="message">Message</label>
+              <textarea required id="message" rows="5"></textarea>
+            </div>
+          </div>
+          <button class="submitbtn" type="submit">Submit</button>
+        </form>
       </div>
     </section>
     <footer>
-      <p>&copy; 2025 Pai. All Right Reserve.</p>
+      <p>&copy; 2025 Pai. All Right Reserved.</p>
     </footer>
 
     <script src="script.js"></script>
