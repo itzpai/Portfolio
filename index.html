@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paiforlio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Nav bar -->
+    <nav id="navbar">
+      <header>
+        <a href="./index.html">
+          <span class="pai">Pai</span><span class="forlio">forlio</span>
+        </a>
+      </header>
+      <img id="menu-icon" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 6h16M4 12h16M4 18h16'/%3E%3C/svg%3E" alt="Menu" />
+      <ul class="nav-list" id="nav-list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#skill">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    
+    <!-- Home section -->
+    <section id="home">
+      <h2>Hey, I'm</h2>
+      <i class="fa-regular fa-hand"></i>
+      <h1>Paing Thu Aung</h1>
+      <div class="home-buttons">
+        <a href="https://github.com/itzpai" class="btn-primary">Learn More About Me</a>
+        <a href="./Cv/CV_Paing_Thu_Aung.pdf" download="Paing_Thu_Aung_CV.pdf" class="btn-secondary">
+          <i class="fas fa-download"></i>Download CV
+        </a>
+      </div>
+    </section>
+
+    <!-- Profile section -->
+    <section id="profile">
+      <h2>About me</h2>
+      <div class="about">
+        <div class="aboutimg">
+          <img src="./img/photo.jpg" alt="profile" />
+        </div>
+        <div class="aboutcontent">
+          <p>
+            Hi, I'm Paing Thu Aung, a passionate front-end developer with
+            expertise in creating responsive, user-friendly, and visually
+            appealing websites. My goal is to craft seamless user
+            experiences and bring creative designs to life.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- skill section -->
+    <section id="skill">
+      <h2>Tech Stack</h2>
+      <p class="subtitle">Technologies I work with to bring ideas to life</p>
+      
+      <div class="tech-stack">
+        <div class="tech-item html">
+          <i class="fab fa-html5"></i>
+          <h3>HTML5</h3>
+        </div>
+        <div class="tech-item css">
+          <i class="fab fa-css3-alt"></i>
+          <h3>CSS3</h3>
+        </div>
+        <div class="tech-item js">
+          <i class="fab fa-js-square"></i>
+          <h3>JavaScript</h3>
+        </div>
+        <div class="tech-item mysql">
+          <i class="fas fa-database"></i>
+          <h3>MySQL</h3>
+        </div>
+        <div class="tech-item php">
+          <i class="fab fa-php"></i>
+          <h3>PHP</h3>
+        </div>
+        <div class="tech-item laravel">
+          <i class="fab fa-laravel"></i>
+          <h3>Laravel</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education section -->
+    <section id="education">
+      <h2>Education</h2>
+      <p class="subtitle">My academic journey and achievements</p>
+      
+      <div class="education-container">
+        <!-- Current Education -->
+        <div class="education-card current">
+          <div class="education-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="education-content">
+            <h3>Bachelor of Electronics Engineering</h3>
+            <h4>Pyay Technological University</h4>
+            <div class="education-duration">
+              <i class="fas fa-calendar-alt"></i>
+              <span>2022 - Present</span>
+            </div>
+            <div class="education-status">
+              <i class="fas fa-clock"></i>
+              <span>Final Year Student</span>
+            </div>
+            <p class="education-description">
+              Currently pursuing Bachelor's degree in Electronics Engineering, 
+              focusing on digital systems, circuit design, and embedded programming. 
+              Combining theoretical knowledge with practical web development skills.
+            </p>
+          </div>
+          <div class="education-year">
+            <span>Present</span>
+          </div>
+        </div>
+
+        <!-- Previous Education -->
+        <div class="education-card previous">
+          <div class="education-icon">
+            <i class="fas fa-university"></i>
+          </div>
+          <div class="education-content">
+            <h3>Electronics Engineering</h3>
+            <h4>Hinthada Technological University</h4>
+            <div class="education-duration">
+              <i class="fas fa-calendar-alt"></i>
+              <span>2017 - 2020</span>
+            </div>
+            <div class="education-status">
+              <i class="fas fa-check-circle"></i>
+              <span>1st Year to 3rd Year Completed</span>
+            </div>
+            <p class="education-description">
+              Completed the first three years of Electronics Engineering program, 
+              building a strong foundation in electrical circuits, mathematics, 
+              and engineering principles before transferring to Pyay Technological University.
+            </p>
+          </div>
+          <div class="education-year">
+            <span>2020</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section -->
+    <section id="contact">
+      <div class="contact">
+        <span>Con</span><span class="tactme">tact me</span>
+        <p>Feel free to reach out.<br>Whether you want to hire me or have an idea to share with.</p>
+        <div class="contacts">
+          <i class="fas fa-map-marker-alt"></i>
+          <div>
+            <div>Location</div>
+            <a href="https://maps.app.goo.gl/1ZbXvM56JjBTsuL27">South Okkalapa</a>
+          </div>
+        </div>
+        <div class="contacts">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <div>Email</div>
+            <a href="mailto:paing.pta@gmail.com">paing.pta@gmail.com</a>
+          </div>
+        </div>
+        <div class="contacts">
+          <i class="fas fa-phone"></i>
+          <div>
+            <div>Phone</div>
+            <a href="tel:+959986484084">+959 986484084</a>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="https://www.facebook.com/paingthu.aung.94043/" target="_blank">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://github.com/itzpai" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://instagram.com/_itzpai" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+      <div class="form">
+        <form action="#" method="post">
+          <div class="name-email">
+            <div class="name">
+              <label for="name">Name</label>
+              <input autocomplete="name" placeholder="Enter your name" required type="text" id="name" />
+            </div>
+            <div class="email">
+              <label for="email">Email</label>
+              <input autocomplete="email" placeholder="sample@gmail.com" required type="email" id="email" />
+            </div>
+            <div class="phone">
+              <label for="phone">Phone Number</label>
+              <input autocomplete="tel" placeholder="+95 9" type="tel" id="phone"/>
+            </div>
+            <div class="message">
+              <label for="message">Message</label>
+              <textarea required id="message" placeholder="Write here..." rows="5"></textarea>
+            </div>
+          </div>
+          <button class="submitbtn" type="submit">
+            <i class="fas fa-paper-plane"></i>Submit
+          </button>
+        </form>
+      </div>
+    </section>
+    
+    <footer>
+      <p>&copy; 2025 Pai. All Right Reserved. <i class="fas fa-heart"></i> Made with passion</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
