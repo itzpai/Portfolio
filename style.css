@@ -110,6 +110,7 @@ header a .forlio {
   width: 70%;
   list-style-type: none;
   gap: 10px;
+  transition: transform 1s ease;
 }
 
 .nav-list-hidden {
@@ -235,9 +236,12 @@ nav ul li a i {
   border: 2px solid;
   box-shadow: 0 5px 15px var(--shadow-gold);
   display: inline-flex;
+  justify-content: center;
   align-items: center;
   gap: 8px;
   white-space: nowrap;
+  min-width: 200px;
+  text-align: center;
 }
 
 .btn-primary {
@@ -701,11 +705,11 @@ nav ul li a i {
   background-color: var(--primary-white);
   display: flex;
   justify-content: space-evenly;
-  align-items: flex-start;
+  align-items: center;
   gap: 50px;
   max-width: 1200px;
   margin: 0 auto;
-  /* width: 100%; */
+  width: 100%;
   box-sizing: border-box;
 }
 
@@ -1013,7 +1017,9 @@ footer p i {
   .btn-secondary {
     width: 100%;
     max-width: 280px;
+    min-width: 280px;
     justify-content: center;
+    padding: 15px 20px;
   }
   
   #profile {
@@ -1152,6 +1158,8 @@ footer p i {
   .btn-secondary {
     padding: 12px 25px;
     font-size: 0.9rem;
+    min-width: 250px;
+    max-width: 250px;
   }
 
   footer {
@@ -1172,6 +1180,14 @@ footer p i {
 
   #home h1 {
     font-size: 2rem;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    min-width: 220px;
+    max-width: 220px;
+    padding: 12px 15px;
+    font-size: 0.85rem;
   }
 
   #skill h2,
