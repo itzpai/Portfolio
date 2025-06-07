@@ -323,22 +323,6 @@ nav ul li a i {
   background: linear-gradient(45deg, var(--accent-gold), var(--accent-gold-dark), var(--accent-gold), var(--accent-gold-dark));
   background-size: 200% 200%;
   z-index: -1;
-  animation: waterFlow 4s ease-in-out infinite;
-}
-
-@keyframes waterFlow {
-  0%, 100% {
-    background-position: 0% 50%;
-  }
-  25% {
-    background-position: 100% 0%;
-  }
-  50% {
-    background-position: 100% 100%;
-  }
-  75% {
-    background-position: 0% 100%;
-  }
 }
 
 #profile .about .aboutimg::after {
@@ -401,8 +385,6 @@ nav ul li a i {
   display: grid;
   gap: 30px;
 }
-
-
 
 .tech-item {
   background-color: var(--primary-white);
@@ -524,7 +506,6 @@ nav ul li a i {
   transition: all 0.3s ease;
   border: 2px solid transparent;
   overflow: hidden;
-  /* width: 100%; */
   display: flex;
   align-items: center;
   gap: 30px;
@@ -681,7 +662,7 @@ nav ul li a i {
 
 .contact-container {
   width: 90%;
-  max-width: 1200px; /* You can adjust this max-width as needed */
+  max-width: 1200px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -906,7 +887,6 @@ footer p i {
     gap: 40px;
   }
 
-  /* Remove these properties from the #contact rule inside the media query */
   #contact {
     flex-direction: column;
     align-items: center;
