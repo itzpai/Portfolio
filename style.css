@@ -4,7 +4,8 @@
   scroll-behavior: smooth;
 }
 
-*::before, *::after {
+*::before, 
+*::after {
   box-sizing: border-box;
 }
 
@@ -29,11 +30,14 @@
 }
 
 body {
+  overflow-x: hidden;
+  width: 100%;
   font-family: 'Poppins', sans-serif; 
   color: var(--primary-black);
   background-color: var(--primary-white);
   line-height: 1.6;
   font-weight: 400;
+  
 }
 
 h1, h2, h3 {
@@ -72,15 +76,6 @@ nav {
   z-index: 1000;
   border-bottom: 1px solid var(--gray-200);
   backdrop-filter: blur(10px);
-}
-
-nav.scrolled {
-  background-color: rgba(255, 255, 255, 0.95);
-  box-shadow: 0px 2px 25px var(--shadow-medium);
-}
-
-.nav-hidden {
-  transform: translateY(-100%); 
 }
 
 header a {
@@ -407,33 +402,7 @@ nav ul li a i {
   gap: 30px;
 }
 
-/* 4K and Ultra-wide screens (6x1) */
-@media (min-width: 1920px) {
-  #skill .tech-stack {
-    grid-template-columns: repeat(6, 1fr);
-  }
-}
 
-/* Desktop/Laptop screens (3x2) */
-@media (min-width: 1024px) and (max-width: 1919px) {
-  #skill .tech-stack {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-/* Tablet screens (2x3) */
-@media (min-width: 768px) and (max-width: 1023px) {
-  #skill .tech-stack {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Mobile screens (2x3) */
-@media (max-width: 767px) {
-  #skill .tech-stack {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 
 .tech-item {
   background-color: var(--primary-white);
@@ -701,21 +670,22 @@ nav ul li a i {
 
 /* Start contacts */
 #contact {
+  width: 100%;
   padding: 80px 20px; 
   background-color: var(--primary-white);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container {
+  width: 90%;
+  max-width: 1200px; /* You can adjust this max-width as needed */
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   gap: 50px;
-  max-width: 1200px;
-  margin: 0 auto;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-#contact .contact {
-  flex: 1;
-  min-width: 300px;
 }
 
 #contact .contact span {
@@ -930,13 +900,19 @@ footer p i {
 
 /* Responsive Design */
 @media (max-width: 1024px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
 
+  /* Remove these properties from the #contact rule inside the media query */
   #contact {
     flex-direction: column;
     align-items: center;
     gap: 40px;
-    padding: 60px 20px;
   }
+
 
   #contact .contact,
   #contact .form {
@@ -945,11 +921,7 @@ footer p i {
     min-width: auto;
   }
 
-  #contact .contact {
-    text-align: center;
-  }
-
-  #contact .contact .contacts {
+  #contact .contact-container .contacts {
     justify-content: center;
   }
 
@@ -1088,10 +1060,6 @@ footer p i {
     font-size: 1.1rem;
   }
 
-  #contact {
-    padding: 60px 15px;
-  }
-
   #contact .form {
     padding: 30px 20px;
   }
@@ -1103,7 +1071,7 @@ footer p i {
   }
 
   footer {
-    padding: 25px 15px;
+    padding: 25px 0;
   }
 
   footer p {
@@ -1112,9 +1080,6 @@ footer p i {
 }
 
 @media (max-width: 480px) {
-  #contact {
-    padding: 40px 10px;
-  }
 
   #contact .form {
     padding: 25px 15px;
@@ -1163,7 +1128,7 @@ footer p i {
   }
 
   footer {
-    padding: 20px 10px;
+    padding: 20px 0;
   }
 
   footer p {
@@ -1206,5 +1171,32 @@ footer p i {
 
   .education-card {
     gap: 15px;
+  }
+}
+/* 4K and Ultra-wide screens (6x1) */
+@media (min-width: 1920px) {
+  #skill .tech-stack {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+/* Desktop/Laptop screens (3x2) */
+@media (min-width: 1024px) and (max-width: 1919px) {
+  #skill .tech-stack {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Tablet screens (2x3) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  #skill .tech-stack {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile screens (2x3) */
+@media (max-width: 767px) {
+  #skill .tech-stack {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
